@@ -28,6 +28,7 @@ class Character
     int primaryAttribute;
     int secondaryAttribute;
     vector<string> pronouns;
+    string desire;
     void setName(){cin>>name;}
     void setGender(){cin>>gender;}
     void printGender(){cout<<"Your chosen gender is: "<<gender<<endl;}
@@ -38,11 +39,12 @@ class Character
         else if(gender=="female"){
             pronouns={"She", "Her", "Hers"};
         }
-        else if (gender=="nonbinary"){
+        else{
             pronouns={"They", "Them", "Theirs"};
         }
         
     };
+    void setDesire(string Desire){desire = Desire;}
     };
 
 #endif
